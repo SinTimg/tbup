@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "async-busboy": "^0.6.1",
-    "axios": "^0.16.1",
+    "axios": "^0.19.2",
     "cnpm": "^5.1.1",
     "cross-env": "^5.0.1",
     "element-ui": "^2.4.6",
