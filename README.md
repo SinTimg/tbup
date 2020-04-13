@@ -1,6 +1,8 @@
 # tbup
 
-> 自助订单管理接单
+> 自助订单,管理接单系统
+
+> 分为3个端，管理员端，商家端和买家端。可用于交易记录，佣金计算，任务分配。
 
 ## Build Setup
 
@@ -18,5 +20,3 @@ $ npm start
 # generate static project
 $ npm run generate
 ```
-
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
