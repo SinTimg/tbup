@@ -1,0 +1,53 @@
+{
+  "name": "tbup",
+  "version": "1.0.0",
+  "description": "tbup",
+  "author": "Sintimg",
+  "private": true,
+  "scripts": {
+    "dev": "backpack dev",
+    "build": "nuxt build && backpack build",
+    "start": "cross-env NODE_ENV=production PORT=80 BASE_URL=http://139.199.70.103:80 pm2 start build/main.js --name 'tbup'",
+    "nuxt": "nuxt",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "async-busboy": "^0.6.1",
+    "axios": "^0.16.1",
+    "cnpm": "^5.1.1",
+    "cross-env": "^5.0.1",
+    "element-ui": "^2.4.6",
+    "gm": "^1.23.0",
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-compress": "^2.0.0",
+    "koa-cors": "0.0.16",
+    "koa-generic-session-sequelize": "^1.0.9",
+    "koa-router": "^7.2.0",
+    "koa-session-minimal": "^3.0.4",
+    "koa-static-cache": "^5.1.1",
+    "mysql": "^2.13.0",
+    "node-xlsx": "^0.7.4",
+    "nuxt": "^1.4.2",
+    "pm2": "^2.5.0",
+    "sequelize": "^3.30.4",
+    "source-map-support": "^0.4.15",
+    "vue-loader": "^12.2.2",
+    "xml2js": "^0.4.17"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "backpack-core": "^0.3.0",
+    "eslint": "^3.13.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-html": "^2.0.3",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "nodemon": "^1.11.0",
+    "scmp": "^2.0.0"
+  }
+}
